@@ -42,3 +42,7 @@ body{
     padding: 2%;
     text-decoration: none;
 }
+
+iframe{
+    overflow:hidden;
+}
