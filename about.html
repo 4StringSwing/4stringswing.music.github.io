@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="icon.png"/>
+        <title>About Me</title>
+    </head>
+        <body>
+            <div id="body">
+                <center><b><u>About me</u></b></center>
+                <iframe src="about.txt" width="100%" height="100%" frameborder="none" ></iframe>
+            </div>
+
+            <div id="nav">
+                <div id="NavCLose"><a onclick="navHide()"><img src="close.png" width="20" height="20"/></a></div>
+                <br>
+                <center>
+                <b><u>Navigation</u></b>
+                <br>
+                <br>
+                    <a href="index.html" class="button">Home</a>
+                    <br>
+                    <br>
+                    <a href="http://linktr.ee/4stringswing" class="button">LinkTree</a>
+                    <br>
+                    <br>
+                    <a href="live.html" class="button">Live Stream</a>
+                    <br>
+                    <Br>
+                    <a onclick="notavail1()" class="button">Music</a>
+                    <br>
+                    <br>
+                    <a onclick="notavail()" class="button">Live Chat</a>
+                    <br>
+                    <br>
+                    <a onclick="notavail1()" class="button">Spotify</a>
+                    </center>
+                </div>
+
+            <div id="sidebar">
+                    <a onclick="nav()"><img src="menu.png" width="20" height="20"/></a>
+                    <hr color="black"/>
+                    <br>
+                    <b><u>What's new</u></b>
+                    <iframe src="new.txt" width= "100%" height="auto" frameborder="none"></iframe>
+            </div>
+        </body>
+</html>
+<script>
+    function notavail(){
+        alert('This feature is not yet available, please try again later.');
+    }
+    function notavail1(){
+        alert('This is not yet available, please try again later.');
+    }
+    function nav(){
+       var navStat = document.getElementById('nav');
+       var sideBar = document.getElementById('sidebar');
+       navStat.style.display = "block";
+       sideBar.style.display = "none";
+    }
+    function navHide(){
+        var navStat = document.getElementById('nav');
+       var sideBar = document.getElementById('sidebar');
+       navStat.style.display = "none";
+       sideBar.style.display = "block";
+    }
+</script>
+
